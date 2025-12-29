@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import '../styles/auth.css';
 
@@ -39,7 +40,7 @@ function Login() {
 
                 <button type="submit">Login</button>
 
-                <p className="link"> Don't have an account? Sighnup</p>
+                <p className="link"> Don't have an account? <Link to="/signup">Sighnup</Link></p>
             </form>
         </div>
     );

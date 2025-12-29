@@ -53,3 +53,13 @@
     color: #1976d2;
     cursor: pointer;
 }
+
+.link a {
+    text-decoration: none;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}

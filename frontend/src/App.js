@@ -1,10 +1,7 @@
-import React from "react";
-// import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import AppRoutes from './routes/AppRoutes';
 
 function App() {
-  // return <Login />
-  return <Signup />
+  return <AppRoutes />;
 }
 
 export default App;

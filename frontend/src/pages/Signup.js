@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import React, { useState }from 'react';
 import '../styles/auth.css';
 
@@ -66,7 +67,7 @@ function Signup() {
 
             <button type='submit'>Sighnup</button>
             <p className='link'>
-                Already have an account? Login
+                Already have an account? <Link to="/login">Login</Link>
             </p>
         </form>
         
