@@ -1,0 +1,57 @@
+.admin-conatiner {
+    padding: 20px;
+}
+
+.admin-conatiner h2 {
+    margin-bottom: 20px;
+}
+
+.user-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.user-table th,
+.user-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.user-table th {
+    background-color: #f1f1f1;
+}
+
+.status-active {
+    color: green;
+    font-weight: bold;
+}
+
+.status-inactive {
+    color: red;
+    font-weight: bold;
+}
+
+.btn-activate {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-deactivate {
+    background-color: #d32f2f;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.btn-activate:hover,
+.btn-deactivate:hover {
+    opacity: 0.8;
+}
