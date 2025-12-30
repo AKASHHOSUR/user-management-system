@@ -1,11 +1,15 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import '../styles/auth.css';
+import { loginUser } from '../services/auth';
+import { useNavigate } from 'react-router-dom';
 
 function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
+
+    const navigate = useNavigate();
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -15,8 +19,13 @@ function Login() {
             return;
         }
 
-        setError('');
-        alert('Login submitted');
+        const user = {
+            fullName: 'Akash',
+            role: email.includes('admin') ? 'admin' : 'user'
+        };
+
+        loginUser(user);
+        navigate('/profile');
     };
 
     return (
